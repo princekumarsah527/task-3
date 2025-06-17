@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 3 - Apex Planet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Apex Planet Internship</h1>
+    <p>Task 3: Advanced Styling and JavaScript</p>
+  </header>
+
+  <main class="container">
+    <!-- Responsive Design Test -->
+    <section class="section">
+      <h2>1. Responsive Design</h2>
+      <p>Resize your browser to observe the responsiveness in action.</p>
+    </section>
+
+    <!-- Interactive Quiz -->
+    <section class="section quiz">
+      <h2>2. Interactive Quiz</h2>
+      <p id="quiz-question">What does HTML stand for?</p>
+      <div class="quiz-options">
+        <button onclick="checkAnswer('a')">a) Hyper Text Markup Language</button>
+        <button onclick="checkAnswer('b')">b) High Text Machine Language</button>
+        <button onclick="checkAnswer('c')">c) Hyperlink Mark Language</button>
+      </div>
+      <p id="quiz-result"></p>
+    </section>
+
+    <!-- Image Carousel -->
+    <section class="section carousel">
+      <h2>3. Image Carousel</h2>
+      <img id="carousel-img" src="/edit.jpg" alt="Carousel" />
+      <button class="btn-secondary" onclick="nextImage()">Next</button>
+    </section>
+
+    <!-- API Fetch -->
+    <section class="section api-data">
+      <h2>4. Joke Generator (API)</h2>
+      <button class="btn-primary" onclick="fetchJoke()">Fetch a Joke</button>
+      <p id="joke"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Apex Planet Software Pvt Ltd</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
